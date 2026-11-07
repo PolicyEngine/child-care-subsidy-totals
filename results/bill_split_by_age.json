@@ -1,0 +1,21 @@
+{
+ "year": 2026,
+ "dataset": "hf://datasets/policyengine/populace-us/populace_us_2024.h5@populace-us-2024-spm-20260909",
+ "commit": "378827969c5146731eb7f60e75e9e8f293e33460",
+ "reported_spending_total": 83421134848.0,
+ "reported_spending_units_with_child": 79117885440.0,
+ "reported_spending_units_without_child": 4303241216.0,
+ "units_with_spending": 8743793.0,
+ "units_with_spending_and_teen": 2445111.0,
+ "records_with_spending_and_teen": 1205,
+ "assigned_by_age": {
+  "0-5": 36811968512.0,
+  "6-12": 29682165760.0,
+  "13-17": 12623754240.0
+ },
+ "children_with_share_by_age": {
+  "0-5": 6556582.0,
+  "6-12": 6946038.5,
+  "13-17": 3260010.75
+ }
+}

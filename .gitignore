@@ -1,0 +1,7 @@
+# Record-level model outputs and microdata stay out of the repository;
+# scripts/cc_gap.py rebuilds them.
+*.npz
+*.h5
+data/raw/
+__pycache__/
+.venv/
