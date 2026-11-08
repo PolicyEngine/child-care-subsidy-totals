@@ -51,6 +51,7 @@ The pull requests in `REPORT.md` cite the state law behind each change.
   - `378827969c5146731eb7f60e75e9e8f293e33460`: PolicyEngine/policyengine-us#10678, Vermont, for `results/bill_split_by_age.json` and the first Vermont case file
   - `de507aa74c0989a1c894591170b20bb821ad0de5`: PolicyEngine/policyengine-us#10694, Vermont, for the second Vermont case file
   - `0304cc8b70a646f59fd473f856d880aa197aa197`: PolicyEngine/policyengine-us#10694, Vermont, for `results/fixes/vt-att-0304cc8b70.json` and the third Vermont case file, whose cases match the second's
+  - `9eb16e23e19520dde5fe7b686c981994200a7293`: PolicyEngine/policyengine-us#10720, Vermont, for `results/fixes/vt-9eb16e23e1.json` and the fourth Vermont case file
   - `391422a907c0220845603c4d8a9a9c21fed318ac`, tree `b9a86257269ad564a404eb855fb171426b87a3f7`: PolicyEngine/policyengine-us#10699, Colorado, its commit `2eeea71ed3` cherry-picked onto `040fe5686c`
   - `0b0aea6c9503325d29dbd2d8df8080606c7a09e1`, tree `09bb0ff8aba6a19d7851af59a9cf3bbb443e5f47`: PolicyEngine/policyengine-us#10698, Nebraska, its commits `6e75fcf479` and `b060143520` cherry-picked onto `040fe5686c`
 - **Populace US 2024**, the default dataset at those commits: `hf://datasets/policyengine/populace-us/populace_us_2024.h5@populace-us-2024-spm-20260909`
