@@ -34,6 +34,7 @@ Each file's SHA-256 hash identifies the copy we read. `scripts/download_sources.
   - Retrieved November 4, 2026
   - SHA-256: `deffc72afe0f5cba1567504b231e0f5c4eeb02e5d155b526924db7197773dded`
 - **Colorado, 8 CCR 1403-1, section 3.111**, the Child Care Assistance Program's activity requirement: https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=31
+- **Colorado, 8 CCR 1403-1, section 3.124**, the Child Care Assistance Program's parent fees: https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=79
 
 The pull requests in `REPORT.md` cite the state law behind each change.
 
@@ -43,6 +44,7 @@ The pull requests in `REPORT.md` cite the state law behind each change.
   - `e53b426082cd8953b30d8ede8b944f2d5f7246be`: `main`, for the five scenario runs in `results/scenarios/`
   - `040fe5686c956dfce960f7c55fa263687a5bf669`: `main`, the base of the fix runs in `results/fixes/`
   - `0296cdbd13be978f864969724bd8d91abcb2c3a4`: `main`, for `results/teen_share_sweep_0296cdbd13.json` and `.txt`
+  - `097b3c7f8a1a99f06867cba0d2dbfc41b3caf8ca`: `main`, for `results/colorado/parent_fee_hours_097b3c7f8a.txt`; its Colorado child care code matches `e53b426082`'s
   - `6e93ee2a214b108c4a01cdee3a195410b566b343`: PolicyEngine/policyengine-us#10690, Colorado
   - `9cd97f594a9c92b27fe6e62202323212042c93ac`: PolicyEngine/policyengine-us#10691, North Carolina
   - `caec9d8a8078e60bff5903bd68352d7e953719fd`: PolicyEngine/policyengine-us#10679, New Hampshire
