@@ -62,12 +62,14 @@ Each pull request cites the law it follows. For each formula change, an Axiom is
 | Pull request | Change | Our estimate for 2026 | Axiom |
 |---|---|---|---|
 | [policyengine-us#10690](https://github.com/PolicyEngine/policyengine-us/pull/10690) | Colorado requires an eligible activity, such as work or school | Colorado's subsidies fall from $270.7 million to $0.5 million | [rulespec-us#2067](https://github.com/TheAxiomFoundation/rulespec-us/issues/2067) |
+| [policyengine-us#10699](https://github.com/PolicyEngine/policyengine-us/pull/10699) | Colorado pays only for children within its age limits | Colorado's fall from $270.7 million to $269.3 million | [rulespec-us#2073](https://github.com/TheAxiomFoundation/rulespec-us/issues/2073) |
 | [policyengine-us#10691](https://github.com/PolicyEngine/policyengine-us/pull/10691) | North Carolina requires a need for care | North Carolina's fall from $127.1 million to $2.0 million | [rulespec-us#2068](https://github.com/TheAxiomFoundation/rulespec-us/issues/2068), [axiom-corpus#985](https://github.com/TheAxiomFoundation/axiom-corpus/issues/985) |
 | [policyengine-us#10679](https://github.com/PolicyEngine/policyengine-us/pull/10679) | New Hampshire divides monthly income by 4.33 weeks in the family's cost share | New Hampshire's fall by $1.66 a year | [rulespec-us#2056](https://github.com/TheAxiomFoundation/rulespec-us/issues/2056) |
+| [policyengine-us#10698](https://github.com/PolicyEngine/policyengine-us/pull/10698) | Nebraska pays only for children within its age limit who use an approved provider | Nebraska's fall from $498 to $250 | [rulespec-us#2072](https://github.com/TheAxiomFoundation/rulespec-us/issues/2072) |
 | [policyengine-us#10678](https://github.com/PolicyEngine/policyengine-us/pull/10678) | Tests Vermont's family balance against the department's sample invoices | No formula change | |
 | [policyengine-us#10694](https://github.com/PolicyEngine/policyengine-us/pull/10694) | Vermont pays nothing for a child with no care hours once a sibling has them | The dataset records no care hours, so the formula still reads the bill as attendance | [rulespec-us#1984](https://github.com/TheAxiomFoundation/rulespec-us/issues/1984) |
 
-In the Colorado and North Carolina runs, families who lose the subsidy pay more of their bills. We estimate that they receive $18.2 million more in SNAP in Colorado and $37.4 million more in North Carolina, and national SPM poverty rates don't change in either run.
+In the runs of policyengine-us#10690 and policyengine-us#10691, families who lose the subsidy pay more of their bills. We estimate that they receive $18.2 million more in SNAP in Colorado and $37.4 million more in North Carolina, and national SPM poverty rates don't change in either run.
 
 ## Open questions
 
@@ -81,14 +83,18 @@ The model can read the copayment a subsidized family reports as that family's wh
 
 ### Which children the bill covers
 
-The model splits each unit's reported spending evenly across its members under 18. Under that split, we estimate that children aged 13 to 17 get $12.6 billion of the $79.1 billion that units with children report. Federal rules cover children under 13, and older children only at a state's option, when they can't care for themselves or a court supervises them ([45 CFR 98.20](https://www.ecfr.gov/current/title-45/part-98/section-98.20)).
+The model splits each unit's reported spending evenly across its members under 18. Under that split, we estimate that children aged 13 to 17 get $12.6 billion of the $79.1 billion that units with children report. Federal rules cover children under 13, and older children at a state's option when they can't care for themselves or a court supervises them ([45 CFR 98.20](https://www.ecfr.gov/current/title-45/part-98/section-98.20)).
 
 ### How SPM net income counts subsidies
 
 The model's SPM net income counts Colorado's, Washington's and West Virginia's child care subsidies and leaves out the other 48 programs. Under policyengine-us#10691, we estimate that North Carolina's subsidies fall by $125.1 million while national SPM net income rises by $37.4 million, the SNAP that families gain.
 
-## Nebraska's fallback to the bill
+## Payments toward a teenager's share of the bill
 
-When the model's Nebraska rates price nothing for a member of the family, its formula pays that member's whole share of the bill, even for a child it counts as ineligible. For example, take a parent earning $20,000 with a 3-year-old in 21 days of care a month, a 15-year-old and a $24,000 annual bill. The model pays $1,819 a month: $819 for the 3-year-old's care and the 15-year-old's whole $1,000 share of the bill. On the dataset as shipped, we estimate that Nebraska's program pays $498 in all, so fixing the formula changes little until the dataset records care schedules.
+For each state's program, we built pairs of otherwise identical SPM units, each with a parent earning $20,000 and a 3-year-old with a $36,000 charge. A 15-year-old's annual child care charge comes to $0 in one unit of each pair and $12,000 in the other. The 15-year-old has no special need, and federal rules leave out a child of that age unless the child can't provide self-care or a court supervises the child ([45 CFR 98.20](https://www.ecfr.gov/current/title-45/part-98/section-98.20)). A program that follows them pays the same in both units. At `main` commit `0296cdbd13`, 49 programs paid the same in both units, and Colorado's and Nebraska's payments rose by the teenager's whole $12,000, with the full-time schedule and with none ([`results/teen_share_sweep_0296cdbd13.txt`](results/teen_share_sweep_0296cdbd13.txt)).
+
+Colorado's formula sums the child care and after-school charges of every member of the unit. Nebraska's pays a member's whole share of the bill whenever its rates price nothing for that member, as they do for a child the formula counts as ineligible. For example, take a parent earning $20,000 with a 3-year-old in 21 days of care a month, a 15-year-old and a $24,000 annual bill. The model pays $1,819 a month, $819 for the 3-year-old's care and the 15-year-old's whole $1,000 share of the bill.
+
+[PolicyEngine/policyengine-us#10699](https://github.com/PolicyEngine/policyengine-us/pull/10699) limits Colorado's payment to children within its age limits, and we estimate that Colorado's subsidies then fall from $270.7 million to $269.3 million. [PolicyEngine/policyengine-us#10698](https://github.com/PolicyEngine/policyengine-us/pull/10698) limits Nebraska's to children within its age limit who use an approved provider. On the dataset as shipped, we estimate that Nebraska's program then pays $250 instead of $498, so the fix matters little until the dataset records care schedules.
 
 [`README.md`](README.md) gives the commands that reproduce every figure here, and [`sources.md`](sources.md) lists each source with its hash.
