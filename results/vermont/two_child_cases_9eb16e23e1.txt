@@ -1,0 +1,17 @@
+policyengine_us at 9eb16e23e19520dde5fe7b686c981994200a7293
+S2: state pays 734.00, family owes 65.00, counted 620.00 a week
+    parent: state rate 0.00, weekly bill 0.00, eligible child False
+    infant: state rate 495.00, weekly bill 360.00, eligible child True
+    preschooler: state rate 439.00, weekly bill 325.00, eligible child True
+S2b: state pays 634.00, family owes 405.00, counted 395.00 a week
+    parent: state rate 0.00, weekly bill 0.00, eligible child False
+    infant: state rate 495.00, weekly bill 600.00, eligible child True
+    preschooler: state rate 439.00, weekly bill 200.00, eligible child True
+S3: state pays 389.00, family owes 200.00, counted 250.00 a week
+    parent: state rate 0.00, weekly bill 0.00, eligible child False
+    preschooler: state rate 439.00, weekly bill 250.00, eligible child True
+    teen: state rate 0.00, weekly bill 200.00, eligible child False
+S3b: state pays 139.00, family owes 211.00, counted 139.00 a week
+    parent: state rate 0.00, weekly bill 0.00, eligible child False
+    preschooler: state rate 439.00, weekly bill 175.00, eligible child True
+    school_age: state rate 204.00, weekly bill 175.00, eligible child True

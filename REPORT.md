@@ -70,8 +70,11 @@ Each pull request cites the law it follows. For each formula change, an Axiom is
 | [policyengine-us#10698](https://github.com/PolicyEngine/policyengine-us/pull/10698) | Nebraska pays only for children within its age limit who use an approved provider | Nebraska's fall from $498 to $250 | [rulespec-us#2072](https://github.com/TheAxiomFoundation/rulespec-us/issues/2072) |
 | [policyengine-us#10678](https://github.com/PolicyEngine/policyengine-us/pull/10678) | Tests Vermont's family balance against the department's sample invoices | No formula change | |
 | [policyengine-us#10694](https://github.com/PolicyEngine/policyengine-us/pull/10694) | Vermont pays nothing for a child with no care hours once a sibling has them | The dataset records no care hours, so the formula still reads the bill as attendance | [rulespec-us#1984](https://github.com/TheAxiomFoundation/rulespec-us/issues/1984) |
+| [policyengine-us#10720](https://github.com/PolicyEngine/policyengine-us/pull/10720) | Vermont pays each child's provider separately, and each provider bills the family its own tuition less its own payment | Vermont's subsidies stay at $45.9 million, and household benefits count $25.8 million of them, down from $29.8 million | [rulespec-us#1984](https://github.com/TheAxiomFoundation/rulespec-us/issues/1984) |
 
 In the runs of policyengine-us#10690 and policyengine-us#10691, families who lose the subsidy pay more of their bills. We estimate that they receive $18.2 million more in SNAP in Colorado and $37.4 million more in North Carolina, and national SPM poverty rates don't change in either run.
+
+In the run of policyengine-us#10720, families pay more of their bills. We estimate that household benefits count $4.0 million less of Vermont's payments and that families owe $4.0 million more. They claim larger child and dependent care credits on those bills, which cut their federal income tax by $1.3 million and their Vermont income tax by $0.6 million. With $68,000 more in SNAP, household net income falls by $2.0 million, and SPM poverty rates don't change.
 
 ## Open questions
 
