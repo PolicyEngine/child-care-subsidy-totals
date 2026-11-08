@@ -1,0 +1,515 @@
+{
+ "year": 2026,
+ "rows": [
+  {
+   "state": "AK",
+   "variable": "ak_child_care_subsidies",
+   "full_time_without_teen_charge": 10032.0,
+   "full_time_with_teen_charge": 10032.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 10032.0,
+   "no_schedule_with_teen_charge": 10032.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "AL",
+   "variable": "al_child_care_subsidies",
+   "full_time_without_teen_charge": 7020.0,
+   "full_time_with_teen_charge": 7020.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "AR",
+   "variable": "ar_child_care_subsidies",
+   "full_time_without_teen_charge": 8316.0,
+   "full_time_with_teen_charge": 8316.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "AZ",
+   "variable": "az_child_care_subsidies",
+   "full_time_without_teen_charge": 10458.0,
+   "full_time_with_teen_charge": 10458.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "CA",
+   "variable": "ca_child_care_subsidies",
+   "full_time_without_teen_charge": 16116.36,
+   "full_time_with_teen_charge": 16116.36,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "CO",
+   "variable": "co_child_care_subsidies",
+   "full_time_without_teen_charge": 35799.96,
+   "full_time_with_teen_charge": 47799.95,
+   "full_time_difference": 11999.99,
+   "no_schedule_without_teen_charge": 36000.0,
+   "no_schedule_with_teen_charge": 48000.0,
+   "no_schedule_difference": 12000.0
+  },
+  {
+   "state": "CT",
+   "variable": "ct_child_care_subsidies",
+   "full_time_without_teen_charge": 17368.0,
+   "full_time_with_teen_charge": 17368.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 5876.0,
+   "no_schedule_with_teen_charge": 5876.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "DC",
+   "variable": "dc_child_care_subsidies",
+   "full_time_without_teen_charge": 15876.0,
+   "full_time_with_teen_charge": 15876.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "DE",
+   "variable": "de_child_care_subsidies",
+   "full_time_without_teen_charge": 13260.0,
+   "full_time_with_teen_charge": 13260.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 13260.0,
+   "no_schedule_with_teen_charge": 13260.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "FL",
+   "variable": "fl_child_care_subsidies",
+   "full_time_without_teen_charge": 7043.4,
+   "full_time_with_teen_charge": 7043.4,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "GA",
+   "variable": "ga_child_care_subsidies",
+   "full_time_without_teen_charge": 5252.0,
+   "full_time_with_teen_charge": 5252.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 5252.0,
+   "no_schedule_with_teen_charge": 5252.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "HI",
+   "variable": "hi_child_care_subsidies",
+   "full_time_without_teen_charge": 9540.0,
+   "full_time_with_teen_charge": 9540.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "IA",
+   "variable": "ia_child_care_subsidies",
+   "full_time_without_teen_charge": 10140.0,
+   "full_time_with_teen_charge": 10140.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "ID",
+   "variable": "id_child_care_subsidies",
+   "full_time_without_teen_charge": 12828.0,
+   "full_time_with_teen_charge": 12828.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "IL",
+   "variable": "il_child_care_subsidies",
+   "full_time_without_teen_charge": 10068.0,
+   "full_time_with_teen_charge": 10068.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "IN",
+   "variable": "in_child_care_subsidies",
+   "full_time_without_teen_charge": 10210.2,
+   "full_time_with_teen_charge": 10210.2,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 10210.2,
+   "no_schedule_with_teen_charge": 10210.2,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "KS",
+   "variable": "ks_child_care_subsidies",
+   "full_time_without_teen_charge": 8881.6,
+   "full_time_with_teen_charge": 8881.6,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "KY",
+   "variable": "ky_child_care_subsidies",
+   "full_time_without_teen_charge": 8316.0,
+   "full_time_with_teen_charge": 8316.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "LA",
+   "variable": "la_child_care_subsidies",
+   "full_time_without_teen_charge": 8190.0,
+   "full_time_with_teen_charge": 8190.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "MA",
+   "variable": "ma_child_care_subsidies",
+   "full_time_without_teen_charge": 14812.56,
+   "full_time_with_teen_charge": 14812.56,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "MD",
+   "variable": "md_child_care_subsidies",
+   "full_time_without_teen_charge": 10556.0,
+   "full_time_with_teen_charge": 10556.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 3518.67,
+   "no_schedule_with_teen_charge": 3518.67,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "ME",
+   "variable": "me_child_care_subsidies",
+   "full_time_without_teen_charge": 12688.0,
+   "full_time_with_teen_charge": 12688.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 9516.0,
+   "no_schedule_with_teen_charge": 9516.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "MI",
+   "variable": "mi_child_care_subsidies",
+   "full_time_without_teen_charge": 11817.0,
+   "full_time_with_teen_charge": 11817.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 11817.0,
+   "no_schedule_with_teen_charge": 11817.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "MN",
+   "variable": "mn_child_care_subsidies",
+   "full_time_without_teen_charge": 10868.0,
+   "full_time_with_teen_charge": 10868.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "MO",
+   "variable": "mo_child_care_subsidies",
+   "full_time_without_teen_charge": 8189.0,
+   "full_time_with_teen_charge": 8189.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "MS",
+   "variable": "ms_child_care_subsidies",
+   "full_time_without_teen_charge": 6500.0,
+   "full_time_with_teen_charge": 6500.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "MT",
+   "variable": "mt_child_care_subsidies",
+   "full_time_without_teen_charge": 14400.0,
+   "full_time_with_teen_charge": 14400.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 14400.0,
+   "no_schedule_with_teen_charge": 14400.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "NC",
+   "variable": "nc_child_care_subsidies",
+   "full_time_without_teen_charge": 8124.0,
+   "full_time_with_teen_charge": 8124.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 8124.0,
+   "no_schedule_with_teen_charge": 8124.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "ND",
+   "variable": "nd_child_care_subsidies",
+   "full_time_without_teen_charge": 11280.0,
+   "full_time_with_teen_charge": 11280.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "NE",
+   "variable": "ne_child_care_subsidies",
+   "full_time_without_teen_charge": 9828.0,
+   "full_time_with_teen_charge": 21828.0,
+   "full_time_difference": 12000.0,
+   "no_schedule_without_teen_charge": 36000.0,
+   "no_schedule_with_teen_charge": 48000.0,
+   "no_schedule_difference": 12000.0
+  },
+  {
+   "state": "NH",
+   "variable": "nh_child_care_subsidies",
+   "full_time_without_teen_charge": 14560.0,
+   "full_time_with_teen_charge": 14560.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 14560.0,
+   "no_schedule_with_teen_charge": 14560.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "NJ",
+   "variable": "nj_child_care_subsidies",
+   "full_time_without_teen_charge": 15190.11,
+   "full_time_with_teen_charge": 15190.11,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "NM",
+   "variable": "nm_child_care_subsidies",
+   "full_time_without_teen_charge": 8820.0,
+   "full_time_with_teen_charge": 8820.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 2205.0,
+   "no_schedule_with_teen_charge": 2205.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "NV",
+   "variable": "nv_child_care_subsidies",
+   "full_time_without_teen_charge": 12351.9,
+   "full_time_with_teen_charge": 12351.9,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 12351.9,
+   "no_schedule_with_teen_charge": 12351.9,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "NY",
+   "variable": "ny_child_care_subsidies",
+   "full_time_without_teen_charge": 17680.0,
+   "full_time_with_teen_charge": 17680.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "OH",
+   "variable": "oh_child_care_subsidies",
+   "full_time_without_teen_charge": 9880.0,
+   "full_time_with_teen_charge": 9880.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "OK",
+   "variable": "ok_child_care_subsidies",
+   "full_time_without_teen_charge": 4334.4,
+   "full_time_with_teen_charge": 4334.4,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "OR",
+   "variable": "or_child_care_subsidies",
+   "full_time_without_teen_charge": 12516.0,
+   "full_time_with_teen_charge": 12516.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 12516.0,
+   "no_schedule_with_teen_charge": 12516.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "PA",
+   "variable": "pa_child_care_subsidies",
+   "full_time_without_teen_charge": 11410.4,
+   "full_time_with_teen_charge": 11410.4,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "RI",
+   "variable": "ri_child_care_subsidies",
+   "full_time_without_teen_charge": 12272.0,
+   "full_time_with_teen_charge": 12272.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 3068.0,
+   "no_schedule_with_teen_charge": 3068.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "SC",
+   "variable": "sc_child_care_subsidies",
+   "full_time_without_teen_charge": 6604.0,
+   "full_time_with_teen_charge": 6604.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "SD",
+   "variable": "sd_child_care_subsidies",
+   "full_time_without_teen_charge": 3575.0,
+   "full_time_with_teen_charge": 3575.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "TN",
+   "variable": "tn_child_care_subsidies",
+   "full_time_without_teen_charge": 9835.6,
+   "full_time_with_teen_charge": 9835.6,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "TX",
+   "variable": "tx_child_care_subsidies",
+   "full_time_without_teen_charge": 6729.15,
+   "full_time_with_teen_charge": 6729.15,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "UT",
+   "variable": "ut_child_care_subsidies",
+   "full_time_without_teen_charge": 10800.0,
+   "full_time_with_teen_charge": 10800.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 10800.0,
+   "no_schedule_with_teen_charge": 10800.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "VA",
+   "variable": "va_child_care_subsidies",
+   "full_time_without_teen_charge": 10524.0,
+   "full_time_with_teen_charge": 10524.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "VT",
+   "variable": "vt_child_care_subsidies",
+   "full_time_without_teen_charge": 22828.0,
+   "full_time_with_teen_charge": 22828.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 12480.0,
+   "no_schedule_with_teen_charge": 12480.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "WA",
+   "variable": "wa_child_care_subsidies",
+   "full_time_without_teen_charge": 14677.68,
+   "full_time_with_teen_charge": 14677.68,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 14677.68,
+   "no_schedule_with_teen_charge": 14677.68,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "WI",
+   "variable": "wi_child_care_subsidies",
+   "full_time_without_teen_charge": 15966.36,
+   "full_time_with_teen_charge": 15966.36,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "WV",
+   "variable": "wv_child_care_subsidies",
+   "full_time_without_teen_charge": 8757.0,
+   "full_time_with_teen_charge": 8757.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  },
+  {
+   "state": "WY",
+   "variable": "wy_child_care_subsidies",
+   "full_time_without_teen_charge": 8064.0,
+   "full_time_with_teen_charge": 8064.0,
+   "full_time_difference": 0.0,
+   "no_schedule_without_teen_charge": 0.0,
+   "no_schedule_with_teen_charge": 0.0,
+   "no_schedule_difference": 0.0
+  }
+ ]
+}
