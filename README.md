@@ -59,7 +59,7 @@ IMPACT=1 PYTHONPATH=../policyengine-us ../policyengine-us/.venv/bin/python scrip
 ../policyengine-us/.venv/bin/python -I scripts/compare_impact.py results/fixes/base-040fe5686c results/fixes/ne-0b0aea6c95 NE
 ```
 
-Colorado's run, `results/fixes/co-elig-391422a907.json`, cherry-picks `2eeea71ed32075b474f09bce95b858020f903550` from `pull/10699/head` the same way.
+Colorado's run, `results/fixes/co-elig-391422a907.json`, cherry-picks `2eeea71ed32075b474f09bce95b858020f903550` from `pull/10699/head` the same way. Its parent fee run, `results/fixes/co-fee-366c0b6dae.json`, takes Colorado's child care variables and parameters from PolicyEngine/policyengine-us#10721's merge commit. From `040fe5686c`, `git -C ../policyengine-us restore --source=14de5b316a05e5704ed74d002eac90457b36941c --staged --worktree -- policyengine_us/variables/gov/states/co/ccap policyengine_us/parameters/gov/states/co/ccap` builds that code, and `git -C ../policyengine-us write-tree` then prints the tree in `sources.md`.
 
 At commit `378827969c5146731eb7f60e75e9e8f293e33460`, from PolicyEngine/policyengine-us#10678, `scripts/bill_split_by_age.py results/bill_split_by_age.json` writes the split by age, and `scripts/vt_multi_child_cases.py` prints the Vermont cases. Run both with the same `PYTHONPATH`. At `main` commit `0296cdbd13be978f864969724bd8d91abcb2c3a4`, `scripts/teen_share_sweep.py results/teen_share_sweep_0296cdbd13.json 2026` writes the teenager sweep and prints the table in `results/teen_share_sweep_0296cdbd13.txt`. At `main` commit `097b3c7f8a1a99f06867cba0d2dbfc41b3caf8ca`, `scripts/co_parent_fee_hours.py` prints `results/colorado/parent_fee_hours_097b3c7f8a.txt`.
 
