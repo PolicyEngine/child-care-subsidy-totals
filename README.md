@@ -75,3 +75,13 @@ PYTHONPATH=../policyengine-us ../policyengine-us/.venv/bin/python scripts/co_rat
 At commit `378827969c5146731eb7f60e75e9e8f293e33460`, from PolicyEngine/policyengine-us#10678, `scripts/bill_split_by_age.py results/bill_split_by_age.json` writes the split by age, and `scripts/vt_multi_child_cases.py` prints the Vermont cases. Run both with the same `PYTHONPATH`. At `main` commit `0296cdbd13be978f864969724bd8d91abcb2c3a4`, `scripts/teen_share_sweep.py results/teen_share_sweep_0296cdbd13.json 2026` writes the teenager sweep and prints the table in `results/teen_share_sweep_0296cdbd13.txt`. At `main` commit `097b3c7f8a1a99f06867cba0d2dbfc41b3caf8ca`, `scripts/co_parent_fee_hours.py` prints `results/colorado/parent_fee_hours_097b3c7f8a.txt`.
 
 `scripts/download_sources.sh` fetches ACF's two workbooks, checks their hashes and rebuilds `data/acf/`.
+
+`scripts/co_rates/download_co_rates.sh` fetches CDEC's two state-established rate tables and the 158 county rate plans that `data/co_rates/sources.tsv` lists, checks their hashes and writes a text copy of each. `scripts/co_rates/parse_co_rates.py` reads those copies into `results/colorado/co_rates_parsed.json`. It checks each plan's licensed rates against the state table in force on the plan's date, and each care unit's rate against its share of the full-time rate. From that file, `gen_co_rate_params.py` writes PolicyEngine US's three rate files, and `check_licensed.py` and `check_exempt.py` compare a checkout's rate files with it:
+
+```bash
+scripts/co_rates/download_co_rates.sh ../co-rates
+../policyengine-us/.venv/bin/python -I scripts/co_rates/parse_co_rates.py ../co-rates results/colorado/co_rates_parsed.json
+rates=../policyengine-us/policyengine_us/parameters/gov/states/co/ccap/rates
+../policyengine-us/.venv/bin/python -I scripts/co_rates/check_licensed.py results/colorado/co_rates_parsed.json $rates/licensed_center.yaml $rates/licensed_home.yaml
+../policyengine-us/.venv/bin/python -I scripts/co_rates/check_exempt.py results/colorado/co_rates_parsed.json $rates/qualified_exempt.yaml
+```

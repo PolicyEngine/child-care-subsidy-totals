@@ -35,6 +35,13 @@ Each file's SHA-256 hash identifies the copy we read. `scripts/download_sources.
   - SHA-256: `deffc72afe0f5cba1567504b231e0f5c4eeb02e5d155b526924db7197773dded`
 - **Colorado, 8 CCR 1403-1, section 3.111**, the Child Care Assistance Program's activity requirement: https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=31
 - **Colorado, 8 CCR 1403-1, section 3.124**, the Child Care Assistance Program's parent fees: https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=79
+- **Colorado, 8 CCR 1403-1, sections [3.125(FFF)](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=101), [3.128(T)](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=116) and [3.130](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=118)**, what a county pays a provider, what a provider may charge a family, and the county reimbursement rates and care units
+
+## Colorado's county reimbursement rates
+
+- **CDEC, State-Established Daily Licensed Provider Reimbursement Rates**, effective [October 1, 2024](https://drive.google.com/file/d/1j9wqebwdFbZqNIpwuLcYEXgKqKvXagUf/view) and [October 1, 2025](https://drive.google.com/file/d/1wK5dCjkW_uqj06tTd0af9-fC6gAfGu5v/view).
+- **CDEC, County CCCAP Policies and Rate Plans**, 158 county rate plans from the [current folder](https://drive.google.com/drive/folders/1YSLL5Sn32NyKbp8Z0063ldFbAhQwfHW_) and its historical subfolders.
+- Retrieved November 8, 2026. `data/co_rates/sources.tsv` lists each file's Google Drive ID and SHA-256 hash, and `scripts/co_rates/download_co_rates.sh` checks each download against them.
 
 The pull requests in `REPORT.md` cite the state law behind each change.
 

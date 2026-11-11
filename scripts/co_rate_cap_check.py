@@ -39,6 +39,7 @@ age = values(person, "age", annual).astype(float)
 unit_weight = values(spm_unit, "spm_unit_weight", annual).astype(float)
 person_unit_weight = np.asarray(spm_unit.project(unit_weight)).astype(float)
 
+ABSORBS = "co_ccap_charges_above_rate" in sim.tax_benefit_system.variables
 months = {}
 closest = None
 for m in range(1, 13):
@@ -63,6 +64,13 @@ for m in range(1, 13):
         float
     )
     gap = np.abs(reimbursement - uncapped)[unit_eligible]
+    # From policyengine-us#10723's 3.128(T) commit, providers absorb each
+    # eligible child's charges above the county rate.
+    above_rate = (
+        values(spm_unit, "co_ccap_charges_above_rate", month).astype(float)
+        if ABSORBS
+        else None
+    )
 
     months[str(month)] = {
         "eligible_units": int(unit_eligible.sum()),
@@ -74,6 +82,12 @@ for m in range(1, 13):
             float(share_of_rate[with_charge].max()) if with_charge.any() else None
         ),
         "largest_reimbursement_gap": float(gap.max()) if gap.size else 0.0,
+        "units_with_charges_above_rate": (
+            None if above_rate is None else int((above_rate > 0).sum())
+        ),
+        "weighted_charges_above_rate": (
+            None if above_rate is None else float((above_rate * unit_weight).sum())
+        ),
     }
     if with_charge.any():
         i = np.flatnonzero(with_charge)[np.argmax(share_of_rate[with_charge])]
