@@ -53,6 +53,7 @@ The pull requests in `REPORT.md` cite the state law behind each change.
   - `0304cc8b70a646f59fd473f856d880aa197aa197`: PolicyEngine/policyengine-us#10694, Vermont, for `results/fixes/vt-att-0304cc8b70.json` and the third Vermont case file, whose cases match the second's
   - `391422a907c0220845603c4d8a9a9c21fed318ac`, tree `b9a86257269ad564a404eb855fb171426b87a3f7`: PolicyEngine/policyengine-us#10699, Colorado, its commit `2eeea71ed3` cherry-picked onto `040fe5686c`
   - `366c0b6dae5b15640ff0eb6cb2e42e396b76f00d`, tree `4d851608428346512745f8f7b1312d30345ad9d3`: PolicyEngine/policyengine-us#10721, Colorado, `040fe5686c` with Colorado's child care variables and parameters from merge commit `14de5b316a`
+  - `78d5e022ce47f656d21270eab596205564b3a228`, tree `f29864155a683758931f66a9bc9a2d3c2f260123`: PolicyEngine/policyengine-us#10723, Colorado, its commits `2953f8e99e`, `0970f3a3c4` and `08f35515c1` cherry-picked onto `391422a907`, for `results/fixes/co-rates-78d5e022ce.json` and `results/colorado/rate_cap_78d5e022ce.json`
   - `0b0aea6c9503325d29dbd2d8df8080606c7a09e1`, tree `09bb0ff8aba6a19d7851af59a9cf3bbb443e5f47`: PolicyEngine/policyengine-us#10698, Nebraska, its commits `6e75fcf479` and `b060143520` cherry-picked onto `040fe5686c`
 - **Populace US 2024**, the default dataset at those commits: `hf://datasets/policyengine/populace-us/populace_us_2024.h5@populace-us-2024-spm-20260909`
   - Revision: `9a814a3b3b53c0ecd6e1737b6ec862c31300ef6f`
