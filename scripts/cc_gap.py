@@ -251,6 +251,7 @@ if os.environ.get("IMPACT"):
             "income_tax",
             "vt_income_tax",
             "state_income_tax",
+            "co_low_income_cdcc",
         ],
     }
     impact = {"national": {}, "VT": {}}

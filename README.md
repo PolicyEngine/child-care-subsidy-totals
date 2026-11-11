@@ -12,7 +12,7 @@ We compare PolicyEngine US's 2026 state child care subsidy totals with what each
 | `results/fixes/` | Runs of the pull requests in `REPORT.md` and of `main` at `040fe5686c`, which each run builds on |
 | `results/bill_split_by_age.json` | Where the dataset's child care spending lands by child age |
 | `results/teen_share_sweep_0296cdbd13.json` and `.txt` | Each state program's payment for a family with and without a 15-year-old's child care charge |
-| `results/colorado/` | Colorado's parent fee and subsidy with and without care hours |
+| `results/colorado/` | Colorado's parent fee and subsidy with and without care hours, and each eligible child's share of the bill against the county rate |
 | `results/vermont/` | Two-child Vermont cases before PolicyEngine/policyengine-us#10694 and at two of its heads |
 | `data/acf/` | The three ACF tables the comparison reads |
 | `scripts/` | The scripts that produce every file above |
@@ -61,6 +61,27 @@ IMPACT=1 PYTHONPATH=../policyengine-us ../policyengine-us/.venv/bin/python scrip
 
 Colorado's run, `results/fixes/co-elig-391422a907.json`, cherry-picks `2eeea71ed32075b474f09bce95b858020f903550` from `pull/10699/head` the same way. Its parent fee run, `results/fixes/co-fee-366c0b6dae.json`, takes Colorado's child care variables and parameters from PolicyEngine/policyengine-us#10721's merge commit. From `040fe5686c`, `git -C ../policyengine-us restore --source=14de5b316a05e5704ed74d002eac90457b36941c --staged --worktree -- policyengine_us/variables/gov/states/co/ccap policyengine_us/parameters/gov/states/co/ccap` builds that code, and `git -C ../policyengine-us write-tree` then prints the tree in `sources.md`.
 
+Colorado's county rate run, `results/fixes/co-rates-78d5e022ce.json`, cherry-picks PolicyEngine/policyengine-us#10723's three commits after #10699's. At the same commit, `scripts/co_rate_cap_check.py` compares each eligible child's share of the bill with the county rate:
+
+```bash
+git -C ../policyengine-us fetch origin 08f35515c128713c7dbf3f8c2d0ea70513383d2d
+git -C ../policyengine-us checkout --detach 040fe5686c956dfce960f7c55fa263687a5bf669
+git -C ../policyengine-us cherry-pick 2eeea71ed32075b474f09bce95b858020f903550 2953f8e99e64205dd1706125fde7ff90f17c69fb 0970f3a3c4a9b26b58e598602fd90230ab1c9611 08f35515c128713c7dbf3f8c2d0ea70513383d2d
+IMPACT=1 PYTHONPATH=../policyengine-us ../policyengine-us/.venv/bin/python scripts/cc_gap.py results/fixes/co-rates-78d5e022ce.json 2026 base
+../policyengine-us/.venv/bin/python -I scripts/compare_impact.py results/fixes/co-elig-391422a907 results/fixes/co-rates-78d5e022ce CO
+PYTHONPATH=../policyengine-us ../policyengine-us/.venv/bin/python scripts/co_rate_cap_check.py results/colorado/rate_cap_78d5e022ce.json 2026
+```
+
 At commit `378827969c5146731eb7f60e75e9e8f293e33460`, from PolicyEngine/policyengine-us#10678, `scripts/bill_split_by_age.py results/bill_split_by_age.json` writes the split by age, and `scripts/vt_multi_child_cases.py` prints the Vermont cases. Run both with the same `PYTHONPATH`. At `main` commit `0296cdbd13be978f864969724bd8d91abcb2c3a4`, `scripts/teen_share_sweep.py results/teen_share_sweep_0296cdbd13.json 2026` writes the teenager sweep and prints the table in `results/teen_share_sweep_0296cdbd13.txt`. At `main` commit `097b3c7f8a1a99f06867cba0d2dbfc41b3caf8ca`, `scripts/co_parent_fee_hours.py` prints `results/colorado/parent_fee_hours_097b3c7f8a.txt`.
 
 `scripts/download_sources.sh` fetches ACF's two workbooks, checks their hashes and rebuilds `data/acf/`.
+
+`scripts/co_rates/download_co_rates.sh` fetches CDEC's two state-established rate tables and the 158 county rate plans that `data/co_rates/sources.tsv` lists, checks their hashes and writes a text copy of each. `scripts/co_rates/parse_co_rates.py` reads those copies into `results/colorado/co_rates_parsed.json`. It checks each plan's licensed rates against the state table in force on the plan's date, and each care unit's rate against its share of the full-time rate. From that file, `gen_co_rate_params.py` writes PolicyEngine US's three rate files, and `check_licensed.py` and `check_exempt.py` compare a checkout's rate files with it:
+
+```bash
+scripts/co_rates/download_co_rates.sh ../co-rates
+../policyengine-us/.venv/bin/python -I scripts/co_rates/parse_co_rates.py ../co-rates results/colorado/co_rates_parsed.json
+rates=../policyengine-us/policyengine_us/parameters/gov/states/co/ccap/rates
+../policyengine-us/.venv/bin/python -I scripts/co_rates/check_licensed.py results/colorado/co_rates_parsed.json $rates/licensed_center.yaml $rates/licensed_home.yaml
+../policyengine-us/.venv/bin/python -I scripts/co_rates/check_exempt.py results/colorado/co_rates_parsed.json $rates/qualified_exempt.yaml
+```

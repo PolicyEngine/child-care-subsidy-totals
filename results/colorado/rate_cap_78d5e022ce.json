@@ -1,0 +1,124 @@
+{
+ "year": 2026,
+ "dataset": "hf://datasets/policyengine/populace-us/populace_us_2024.h5@populace-us-2024-spm-20260909",
+ "commit": "78d5e022ce47f656d21270eab596205564b3a228",
+ "months": {
+  "2026-01": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-02": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-03": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-04": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-05": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-06": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-07": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-08": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-09": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-10": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-11": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  },
+  "2026-12": {
+   "eligible_units": 113,
+   "eligible_children": 206,
+   "children_with_charges": 38,
+   "children_without_a_rate": 0,
+   "children_over_rate": 0,
+   "largest_share_of_rate": 0.6360004676215033,
+   "largest_reimbursement_gap": 1.52587890625e-05
+  }
+ },
+ "closest": {
+  "month": "2026-01",
+  "county": "EAGLE_COUNTY_CO",
+  "age": 8.0,
+  "monthly_charge": 922.4338989257812,
+  "monthly_rate": 1450.36669921875,
+  "share_of_rate": 0.6360004676215033,
+  "spm_unit_weight": 9039.068359375
+ }
+}

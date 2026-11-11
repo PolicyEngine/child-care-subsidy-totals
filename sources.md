@@ -35,6 +35,13 @@ Each file's SHA-256 hash identifies the copy we read. `scripts/download_sources.
   - SHA-256: `deffc72afe0f5cba1567504b231e0f5c4eeb02e5d155b526924db7197773dded`
 - **Colorado, 8 CCR 1403-1, section 3.111**, the Child Care Assistance Program's activity requirement: https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=31
 - **Colorado, 8 CCR 1403-1, section 3.124**, the Child Care Assistance Program's parent fees: https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=79
+- **Colorado, 8 CCR 1403-1, sections [3.125(FFF)](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=101), [3.128(T)](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=116) and [3.130](https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=12658&fileName=8%20CCR%201403-1#page=118)**, what a county pays a provider, what a provider may charge a family, and the county reimbursement rates and care units
+
+## Colorado's county reimbursement rates
+
+- **CDEC, State-Established Daily Licensed Provider Reimbursement Rates**, effective [October 1, 2024](https://drive.google.com/file/d/1j9wqebwdFbZqNIpwuLcYEXgKqKvXagUf/view) and [October 1, 2025](https://drive.google.com/file/d/1wK5dCjkW_uqj06tTd0af9-fC6gAfGu5v/view).
+- **CDEC, County CCCAP Policies and Rate Plans**, 158 county rate plans from the [current folder](https://drive.google.com/drive/folders/1YSLL5Sn32NyKbp8Z0063ldFbAhQwfHW_) and its historical subfolders.
+- Retrieved November 8, 2026. `data/co_rates/sources.tsv` lists each file's Google Drive ID and SHA-256 hash, and `scripts/co_rates/download_co_rates.sh` checks each download against them.
 
 The pull requests in `REPORT.md` cite the state law behind each change.
 
@@ -53,6 +60,7 @@ The pull requests in `REPORT.md` cite the state law behind each change.
   - `0304cc8b70a646f59fd473f856d880aa197aa197`: PolicyEngine/policyengine-us#10694, Vermont, for `results/fixes/vt-att-0304cc8b70.json` and the third Vermont case file, whose cases match the second's
   - `391422a907c0220845603c4d8a9a9c21fed318ac`, tree `b9a86257269ad564a404eb855fb171426b87a3f7`: PolicyEngine/policyengine-us#10699, Colorado, its commit `2eeea71ed3` cherry-picked onto `040fe5686c`
   - `366c0b6dae5b15640ff0eb6cb2e42e396b76f00d`, tree `4d851608428346512745f8f7b1312d30345ad9d3`: PolicyEngine/policyengine-us#10721, Colorado, `040fe5686c` with Colorado's child care variables and parameters from merge commit `14de5b316a`
+  - `78d5e022ce47f656d21270eab596205564b3a228`, tree `f29864155a683758931f66a9bc9a2d3c2f260123`: PolicyEngine/policyengine-us#10723, Colorado, its commits `2953f8e99e`, `0970f3a3c4` and `08f35515c1` cherry-picked onto `391422a907`, for `results/fixes/co-rates-78d5e022ce.json` and `results/colorado/rate_cap_78d5e022ce.json`
   - `0b0aea6c9503325d29dbd2d8df8080606c7a09e1`, tree `09bb0ff8aba6a19d7851af59a9cf3bbb443e5f47`: PolicyEngine/policyengine-us#10698, Nebraska, its commits `6e75fcf479` and `b060143520` cherry-picked onto `040fe5686c`
 - **Populace US 2024**, the default dataset at those commits: `hf://datasets/policyengine/populace-us/populace_us_2024.h5@populace-us-2024-spm-20260909`
   - Revision: `9a814a3b3b53c0ecd6e1737b6ec862c31300ef6f`
